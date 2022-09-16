@@ -9,6 +9,7 @@ export const HeaderList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 `;
 export const HeaderLogo = styled.a`
   font-size: 32px;

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ContainerBlock = styled.div`
-  max-width: 1230px;
+  max-width: 1430px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;

@@ -7,7 +7,7 @@ const GlobalStyled = createGlobalStyle`
     box-sizing: border-box;
   }
   body{
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Manrope', sans-serif;
   }
   button{
     background: #2f97ff;
