@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const ContainerBlock = styled.div`
-  max-width: 1430px;
+  max-width: 1340px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
 `;
 
 const Container = ({ children }) => {

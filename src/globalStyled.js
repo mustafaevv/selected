@@ -15,6 +15,11 @@ const GlobalStyled = createGlobalStyle`
   h1{
     color: #fff;
   }
+  input{
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background: none;
+  }
   h2,
   h3{
     color: #092433;

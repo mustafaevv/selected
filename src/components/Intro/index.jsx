@@ -17,6 +17,7 @@ import IntroSection, {
 } from "./Intro.styled";
 import "swiper/css";
 import "swiper/css/pagination";
+
 const Intro = () => {
   return (
     <IntroSection>
