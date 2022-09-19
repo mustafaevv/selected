@@ -9,9 +9,20 @@ const FooterBlock = styled.footer`
 export const Top = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 export const Left = styled.div`
   width: 60%;
+  @media (max-width: 992px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+  }
 `;
 export const LeftTitle = styled.h3`
   color: #fff;
@@ -19,11 +30,17 @@ export const LeftTitle = styled.h3`
   font-weight: 400;
   max-width: 35vh;
   margin-bottom: 1em;
+  @media (max-width: 992px) {
+    max-width:  max-content;
+  }
 `;
 export const Right = styled.div`
   display: flex;
   flex-direction: column;
   width: 40%;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
 `;
 export const LeftText = styled.div`
   font-size: 18px;
@@ -31,6 +48,9 @@ export const LeftText = styled.div`
   font-weight: 400;
   max-width: 50vh;
   line-height: 1.5;
+  @media (max-width: 992px) {
+    max-width: 80vh;
+  }
 `;
 export const RightInput = styled.input`
   line-height: 45px;
@@ -77,6 +97,10 @@ export const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 5em;
+  @media (max-width: 1230px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 export const BottomInfo = styled.p`
   font-size: 16px;
@@ -87,6 +111,14 @@ export const BottomList = styled.ul`
   display: flex;
   list-style: none;
   gap: 1.5em;
+  @media (max-width: 1230px) {
+    margin-bottom: 3em;
+    margin-top: 3em;
+  }
+  @media (max-width: 678px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 export const BottomLink = styled.a`
   color: #fff;

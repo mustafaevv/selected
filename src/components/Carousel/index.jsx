@@ -21,7 +21,21 @@ const Carousel = () => {
         <Title>Большой выбор ресурсов</Title>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          slidesPerView={4}
+          breakpoints={{
+            678: {
+              slidesPerView: 2,
+            },
+            786: {
+              slidesPerView: 2,
+            },
+            992: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 4,
+            },
+          }}
+          slidesPerView={1}
           navigation
         >
           {slider.map((item, i) => (

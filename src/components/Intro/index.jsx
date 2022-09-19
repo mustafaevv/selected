@@ -16,7 +16,6 @@ import IntroSection, {
   SliderRight,
 } from "./Intro.styled";
 import "swiper/css";
-import "swiper/css/pagination";
 
 const Intro = () => {
   return (
@@ -30,8 +29,6 @@ const Intro = () => {
             loop={true}
             speed={2000}
             autoplay={{ delay: 5000 }}
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
           >
             {slider.map((item, i) => (
               <SwiperSlide key={i}>

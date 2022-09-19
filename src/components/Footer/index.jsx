@@ -17,7 +17,6 @@ import FooterBlock, {
   RightCheckBox,
   RightInput,
   RightInputComments,
-  RightInputTell,
   Top,
 } from "./Footer.styled";
 const Footer = () => {

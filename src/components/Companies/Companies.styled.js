@@ -59,6 +59,10 @@ export const RightBlock = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media (max-width: 419px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 export const RightItems = styled.div`
   width: 190px;

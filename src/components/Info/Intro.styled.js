@@ -1,30 +1,62 @@
 import styled from "styled-components";
+import image from "../../images/info.png";
+
 const Section = styled.section`
   background: #092433;
 `;
 export const Block = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
+  padding: 50px 0;
+  position: relative;
+  @media (max-width: 1200px) {
+    align-items: flex-end;
+  }
 `;
 export const Left = styled.div`
   width: 50%;
-  background: url(${({ img }) => img});
-`;
-export const LeftImg = styled.img`
-  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(${image}) center / cover no-repeat;
+
+  @media (max-width: 1200px) {
+    height: 50vh;
+    width: 100%;
+  }
 `;
 export const Right = styled.div`
   padding: 50px 0;
   width: 50%;
+  @media (max-width: 1200px) {
+    width: 100%;
+    margin-top: 299px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+export const RightItem = styled.div`
+  @media (max-width: 1200px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const Title = styled.h1`
-  font-size: 45px;
+  font-size: clamp(20px, 4vh, 45px);
   max-width: 60vh;
   line-height: 1;
   margin-bottom: 1.1em;
+
+  @media (max-width: 1200px) {
+    max-width: max-content;
+  }
 `;
 export const Text = styled.p`
   color: #fff;
@@ -42,6 +74,9 @@ export const Desc = styled.p`
 export const Items = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 605px) {
+    flex-direction: column;
+  }
 `;
 export const ItemsText = styled.p`
   font-size: 18px;
@@ -51,8 +86,15 @@ export const ItemsText = styled.p`
   padding: 0 25px;
   border-radius: 8px;
   margin-bottom: 1.5em;
-  &:nth-child(2){
+  &:nth-child(2) {
     margin-left: 20px;
+  }
+  @media (max-width: 605px) {
+    width: 100%;
+    text-align: center;
+    &:nth-child(2) {
+      margin-left: 0;
+    }
   }
 `;
 export const ItemsTextBottom = styled.p`

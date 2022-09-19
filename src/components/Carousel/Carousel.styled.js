@@ -9,12 +9,12 @@ export const Title = styled.h3`
   margin-bottom: 2em;
 `;
 export const Slider = styled.div`
-  width: 300px;
-  height: 285px;
   background: #ffffff;
   box-shadow: 10px 10px 20px 0px rgb(9 36 51 / 10%);
   border-radius: 15px;
   margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 `;
 export const SliderItemTop = styled.div`
   background: #2f97ff;
@@ -29,7 +29,7 @@ export const SliderItemTop = styled.div`
 
 export const SliderTitle = styled.h5``;
 export const SliderItemBottom = styled.div`
-  padding: 50px 35px;
+  padding: 35px;
 `;
 export const SliderText = styled.p`
   color: #092433;
