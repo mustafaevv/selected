@@ -1,4 +1,5 @@
 import Block from "./components/Block";
+import Carousel from "./components/Carousel";
 import Companies from "./components/Companies";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -15,6 +16,7 @@ const App = () => {
       <Intro />
       <ProductSelectel />
       <Servis />
+      <Carousel/>
       <Info/>
       <Work/>
       <Block/>

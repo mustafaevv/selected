@@ -11,7 +11,7 @@ export const Top = styled.div`
   justify-content: space-between;
 `;
 export const Left = styled.div`
-  width: 40%;
+  width: 60%;
 `;
 export const LeftTitle = styled.h3`
   color: #fff;
@@ -23,7 +23,7 @@ export const LeftTitle = styled.h3`
 export const Right = styled.div`
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 40%;
 `;
 export const LeftText = styled.div`
   font-size: 18px;
@@ -91,7 +91,6 @@ export const BottomList = styled.ul`
 export const BottomLink = styled.a`
   color: #fff;
   font-size: 16px;
-
 `;
 export const BottomListIcons = styled.ul`
   display: flex;
